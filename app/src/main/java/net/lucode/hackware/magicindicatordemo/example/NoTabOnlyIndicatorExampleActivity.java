@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.TriangularPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.DummyPagerTitleView;
+import net.lucode.hackware.tabindicator.TabIndicator;
+import net.lucode.hackware.tabindicator.ViewPagerHelper;
+import net.lucode.hackware.tabindicator.buildins.UIUtil;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.CommonNavigator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.TriangularPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.DummyPagerTitleView;
 import net.lucode.hackware.magicindicatordemo.R;
 
 import java.util.Arrays;
@@ -41,7 +41,7 @@ public class NoTabOnlyIndicatorExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundColor(Color.LTGRAY);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdjustMode(true);
@@ -70,7 +70,7 @@ public class NoTabOnlyIndicatorExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator2() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator2);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator2);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdjustMode(true);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {

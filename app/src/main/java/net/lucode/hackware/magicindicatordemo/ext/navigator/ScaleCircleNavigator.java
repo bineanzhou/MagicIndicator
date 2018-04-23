@@ -12,10 +12,10 @@ import android.view.ViewConfiguration;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
-import net.lucode.hackware.magicindicator.NavigatorHelper;
-import net.lucode.hackware.magicindicator.abs.IPagerNavigator;
-import net.lucode.hackware.magicindicator.buildins.ArgbEvaluatorHolder;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
+import net.lucode.hackware.tabindicator.NavigatorHelper;
+import net.lucode.hackware.tabindicator.abs.IPagerNavigator;
+import net.lucode.hackware.tabindicator.buildins.ArgbEvaluatorHolder;
+import net.lucode.hackware.tabindicator.buildins.UIUtil;
 
 import java.util.ArrayList;
 import java.util.List;

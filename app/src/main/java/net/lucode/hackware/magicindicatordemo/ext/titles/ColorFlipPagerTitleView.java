@@ -2,7 +2,7 @@ package net.lucode.hackware.magicindicatordemo.ext.titles;
 
 import android.content.Context;
 
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 
 /**
  * Created by hackware on 2016/7/24.

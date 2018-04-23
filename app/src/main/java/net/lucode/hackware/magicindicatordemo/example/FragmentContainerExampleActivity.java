@@ -9,15 +9,15 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import net.lucode.hackware.magicindicator.FragmentContainerHelper;
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
+import net.lucode.hackware.tabindicator.FragmentContainerHelper;
+import net.lucode.hackware.tabindicator.TabIndicator;
+import net.lucode.hackware.tabindicator.buildins.UIUtil;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.CommonNavigator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
 import net.lucode.hackware.magicindicatordemo.R;
 
 import java.util.ArrayList;
@@ -73,7 +73,7 @@ public class FragmentContainerExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundResource(R.drawable.round_indicator_bg);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {

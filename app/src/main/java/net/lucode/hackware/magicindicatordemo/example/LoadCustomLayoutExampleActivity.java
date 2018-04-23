@@ -10,13 +10,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.CommonPagerTitleView;
+import net.lucode.hackware.tabindicator.TabIndicator;
+import net.lucode.hackware.tabindicator.ViewPagerHelper;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.CommonNavigator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.CommonPagerTitleView;
 import net.lucode.hackware.magicindicatordemo.R;
 
 import java.util.Arrays;
@@ -41,7 +41,7 @@ public class LoadCustomLayoutExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundColor(Color.BLACK);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdjustMode(true);

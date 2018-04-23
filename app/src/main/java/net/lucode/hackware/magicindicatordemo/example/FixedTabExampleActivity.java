@@ -12,18 +12,18 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.LinearLayout;
 
-import net.lucode.hackware.magicindicator.FragmentContainerHelper;
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
+import net.lucode.hackware.tabindicator.FragmentContainerHelper;
+import net.lucode.hackware.tabindicator.TabIndicator;
+import net.lucode.hackware.tabindicator.ViewPagerHelper;
+import net.lucode.hackware.tabindicator.buildins.UIUtil;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.CommonNavigator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 import net.lucode.hackware.magicindicatordemo.R;
 import net.lucode.hackware.magicindicatordemo.ext.titles.ScaleTransitionPagerTitleView;
 
@@ -52,7 +52,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
             @Override
@@ -91,7 +91,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator2() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator2);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator2);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdjustMode(true);
@@ -144,7 +144,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator3() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator3);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator3);
         magicIndicator.setBackgroundResource(R.drawable.round_indicator_bg);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
@@ -186,7 +186,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator4() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator4);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator4);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
 

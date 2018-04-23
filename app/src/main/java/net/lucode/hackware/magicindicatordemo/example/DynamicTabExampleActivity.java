@@ -8,13 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
+import net.lucode.hackware.tabindicator.TabIndicator;
+import net.lucode.hackware.tabindicator.ViewPagerHelper;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.CommonNavigator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
 import net.lucode.hackware.magicindicatordemo.R;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class DynamicTabExampleActivity extends AppCompatActivity {
     private ExamplePagerAdapter mExamplePagerAdapter = new ExamplePagerAdapter(mDataList);
 
     private ViewPager mViewPager;
-    private MagicIndicator mMagicIndicator;
+    private TabIndicator mMagicIndicator;
     private CommonNavigator mCommonNavigator;
 
     private Toast mToast;
@@ -41,7 +41,7 @@ public class DynamicTabExampleActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
 
-        mMagicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        mMagicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         mMagicIndicator.setBackgroundColor(Color.parseColor("#d43d3d"));
         mCommonNavigator = new CommonNavigator(this);
         mCommonNavigator.setSkimOver(true);

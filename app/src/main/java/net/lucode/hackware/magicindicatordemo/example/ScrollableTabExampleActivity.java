@@ -9,20 +9,20 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.BezierPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.TriangularPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.WrapPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
+import net.lucode.hackware.tabindicator.TabIndicator;
+import net.lucode.hackware.tabindicator.ViewPagerHelper;
+import net.lucode.hackware.tabindicator.buildins.UIUtil;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.CommonNavigator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.BezierPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.TriangularPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.indicators.WrapPagerIndicator;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
+import net.lucode.hackware.tabindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 import net.lucode.hackware.magicindicatordemo.R;
 import net.lucode.hackware.magicindicatordemo.ext.titles.ColorFlipPagerTitleView;
 import net.lucode.hackware.magicindicatordemo.ext.titles.ScaleTransitionPagerTitleView;
@@ -57,7 +57,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundColor(Color.parseColor("#d43d3d"));
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setSkimOver(true);
@@ -96,7 +96,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator2() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator2);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator2);
         magicIndicator.setBackgroundColor(Color.parseColor("#00c853"));
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setScrollPivotX(0.25f);
@@ -136,7 +136,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator3() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator3);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator3);
         magicIndicator.setBackgroundColor(Color.BLACK);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
@@ -174,7 +174,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator4() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator4);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator4);
         magicIndicator.setBackgroundColor(Color.parseColor("#455a64"));
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
@@ -210,7 +210,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator5() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator5);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator5);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setScrollPivotX(0.8f);
@@ -252,7 +252,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator6() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator6);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator6);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
@@ -289,7 +289,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator7() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator7);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator7);
         magicIndicator.setBackgroundColor(Color.parseColor("#fafafa"));
         CommonNavigator commonNavigator7 = new CommonNavigator(this);
         commonNavigator7.setScrollPivotX(0.65f);
@@ -332,7 +332,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator8() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator8);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator8);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setScrollPivotX(0.35f);
@@ -369,7 +369,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator9() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator9);
+        TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator9);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setScrollPivotX(0.15f);
