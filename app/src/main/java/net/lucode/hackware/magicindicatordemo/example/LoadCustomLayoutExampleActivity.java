@@ -37,10 +37,10 @@ public class LoadCustomLayoutExampleActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
 
-        initMagicIndicator1();
+        initTabindicator1();
     }
 
-    private void initMagicIndicator1() {
+    private void initTabindicator1() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundColor(Color.BLACK);
         CommonNavigator commonNavigator = new CommonNavigator(this);

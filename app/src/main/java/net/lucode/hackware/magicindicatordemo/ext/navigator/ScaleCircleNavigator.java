@@ -213,11 +213,11 @@ public class ScaleCircleNavigator extends View implements IPagerNavigator, Navig
     }
 
     @Override
-    public void onAttachToMagicIndicator() {
+    public void onAttachToTabindicator() {
     }
 
     @Override
-    public void onDetachFromMagicIndicator() {
+    public void onDetachFromTabindicator() {
     }
 
     public void setMinRadius(int minRadius) {

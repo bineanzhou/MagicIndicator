@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F:\demo\tablayout\TabIndicator\MagicIndicator.iml" filepath="F:\demo\tablayout\TabIndicator\MagicIndicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TabIndicator.iml" filepath="$PROJECT_DIR$/.idea/modules/TabIndicator.iml" />
       <module fileurl="file://F:\demo\tablayout\TabIndicator\TabIndicator.iml" filepath="F:\demo\tablayout\TabIndicator\TabIndicator.iml" />
+      <module fileurl="file://F:\demo\tablayout\TabIndicator\Tabindicator.iml" filepath="F:\demo\tablayout\TabIndicator\Tabindicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tabindicator/magicindicator.iml" filepath="$PROJECT_DIR$/tabindicator/magicindicator.iml" />
+      <module fileurl="file://F:\demo\tablayout\TabIndicator\tabindicator\magicindicator.iml" filepath="F:\demo\tablayout\TabIndicator\tabindicator\magicindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tabindicator/tabindicator.iml" filepath="$PROJECT_DIR$/tabindicator/tabindicator.iml" />
     </modules>
   </component>
 </project>

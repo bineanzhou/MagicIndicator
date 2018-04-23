@@ -28,7 +28,7 @@ public class DynamicTabExampleActivity extends AppCompatActivity {
     private ExamplePagerAdapter mExamplePagerAdapter = new ExamplePagerAdapter(mDataList);
 
     private ViewPager mViewPager;
-    private TabIndicator mMagicIndicator;
+    private TabIndicator mTabindicator;
     private CommonNavigator mCommonNavigator;
 
     private Toast mToast;
@@ -41,8 +41,8 @@ public class DynamicTabExampleActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
 
-        mMagicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
-        mMagicIndicator.setBackgroundColor(Color.parseColor("#d43d3d"));
+        mTabindicator = (TabIndicator) findViewById(R.id.magic_indicator1);
+        mTabindicator.setBackgroundColor(Color.parseColor("#d43d3d"));
         mCommonNavigator = new CommonNavigator(this);
         mCommonNavigator.setSkimOver(true);
         mCommonNavigator.setAdapter(new CommonNavigatorAdapter() {
@@ -72,8 +72,8 @@ public class DynamicTabExampleActivity extends AppCompatActivity {
                 return null;
             }
         });
-        mMagicIndicator.setNavigator(mCommonNavigator);
-        ViewPagerHelper.bind(mMagicIndicator, mViewPager);
+        mTabindicator.setNavigator(mCommonNavigator);
+        ViewPagerHelper.bind(mTabindicator, mViewPager);
 
         mToast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
     }

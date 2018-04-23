@@ -34,7 +34,7 @@ public class FragmentContainerExampleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fragment_container_example_layout);
 
         initFragments();
-        initMagicIndicator1();
+        initTabindicator1();
 
         mFragmentContainerHelper.handlePageSelected(1, false);
         switchPages(1);
@@ -72,7 +72,7 @@ public class FragmentContainerExampleActivity extends AppCompatActivity {
         }
     }
 
-    private void initMagicIndicator1() {
+    private void initTabindicator1() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundResource(R.drawable.round_indicator_bg);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -112,6 +112,6 @@ public class FragmentContainerExampleActivity extends AppCompatActivity {
             }
         });
         magicIndicator.setNavigator(commonNavigator);
-        mFragmentContainerHelper.attachMagicIndicator(magicIndicator);
+        mFragmentContainerHelper.attachTabindicator(magicIndicator);
     }
 }

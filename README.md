@@ -1,18 +1,18 @@
-# MagicIndicator
+# Tabindicator
 
 A powerful, customizable and extensible ViewPager indicator framework. As the best alternative of ViewPagerIndicator, TabLayout and PagerSlidingTabStrip.
 
-[![](https://jitpack.io/v/hackware1993/MagicIndicator.svg)](https://jitpack.io/#hackware1993/MagicIndicator)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MagicIndicator-green.svg?style=true)](https://android-arsenal.com/details/1/4252)
+[![](https://jitpack.io/v/hackware1993/Tabindicator.svg)](https://jitpack.io/#hackware1993/Tabindicator)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Tabindicator-green.svg?style=true)](https://android-arsenal.com/details/1/4252)
 [![Codewake](https://www.codewake.com/badges/ask_question.svg)](https://www.codewake.com/p/magicindicator)
 
-![magicindicaotor.gif](https://github.com/hackware1993/MagicIndicator/blob/master/magicindicator.gif)
+![magicindicaotor.gif](https://github.com/hackware1993/Tabindicator/blob/master/magicindicator.gif)
 
 # Usage
 
-Simple steps, you can integrate **MagicIndicator**:
+Simple steps, you can integrate **Tabindicator**:
 
-1. checkout out **MagicIndicator**, which contains source code and demo
+1. checkout out **Tabindicator**, which contains source code and demo
 2. import module **magicindicator** and add dependency:
 
   ```groovy
@@ -31,11 +31,11 @@ Simple steps, you can integrate **MagicIndicator**:
   
   dependencies {
       ...
-      compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+      compile 'com.github.hackware1993:Tabindicator:1.5.0'
   }
   ```
   
-3. add **MagicIndicator** to your layout xml:
+3. add **Tabindicator** to your layout xml:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ Simple steps, you can integrate **MagicIndicator**:
       android:orientation="vertical"
       tools:context="net.lucode.hackware.magicindicatordemo.MainActivity">
   
-      <net.lucode.hackware.magicindicator.MagicIndicator
+      <net.lucode.hackware.magicindicator.Tabindicator
           android:id="@+id/magic_indicator"
           android:layout_width="match_parent"
           android:layout_height="40dp" />
@@ -60,10 +60,10 @@ Simple steps, you can integrate **MagicIndicator**:
   </LinearLayout>
   ```
 
-4. find **MagicIndicator** through code, initialize it:
+4. find **Tabindicator** through code, initialize it:
 
   ```java
-  MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator);
+  Tabindicator magicIndicator = (Tabindicator) findViewById(R.id.magic_indicator);
   CommonNavigator commonNavigator = new CommonNavigator(this);
   commonNavigator.setAdapter(new CommonNavigatorAdapter() {
   
@@ -116,7 +116,7 @@ Simple steps, you can integrate **MagicIndicator**:
   
 # Extend
 
-**MagicIndicator** can be easily extended:
+**Tabindicator** can be easily extended:
 
 1. implement **IPagerTitleView** to customize tab:
 
@@ -176,7 +176,7 @@ Simple steps, you can integrate **MagicIndicator**:
 
 Now, enjoy yourself!
 
-See extensions in [*app/src/main/java/net/lucode/hackware/magicindicatordemo/ext*](https://github.com/hackware1993/MagicIndicator/tree/master/app/src/main/java/net/lucode/hackware/magicindicatordemo/ext)，more extensions adding...
+See extensions in [*app/src/main/java/net/lucode/hackware/magicindicatordemo/ext*](https://github.com/hackware1993/Tabindicator/tree/master/app/src/main/java/net/lucode/hackware/magicindicatordemo/ext)，more extensions adding...
 
 # Who developed?
 
@@ -184,11 +184,11 @@ hackware1993@gmail.com
 
 cfb1993@163.com
 
-Q&A <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=7ac5bef0321c7afa7e9fc4e94175fa36f413e3330c82e828b1743274af8a64d7"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="MagicIndicator交流群" title="MagicIndicator交流群"></a>
+Q&A <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=7ac5bef0321c7afa7e9fc4e94175fa36f413e3330c82e828b1743274af8a64d7"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Tabindicator交流群" title="Tabindicator交流群"></a>
 
 An intermittent perfectionist.
 
-Visit [My Blog](http://hackware.lucode.net) for more articles about MagicIndicator.
+Visit [My Blog](http://hackware.lucode.net) for more articles about Tabindicator.
 
 # License
 

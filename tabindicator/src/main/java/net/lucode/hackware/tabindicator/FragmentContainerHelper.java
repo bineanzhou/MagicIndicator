@@ -15,13 +15,13 @@ import java.util.List;
 
 
 /**
- * 使得MagicIndicator在FragmentContainer中使用
+ * 使得Tabindicator在FragmentContainer中使用
  * Created by hackware on 2016/9/4.
  */
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class FragmentContainerHelper {
-    private List<TabIndicator> mMagicIndicators = new ArrayList<TabIndicator>();
+    private List<TabIndicator> mTabindicators = new ArrayList<TabIndicator>();
     private ValueAnimator mScrollAnimator;
     private int mLastSelectedIndex;
     private int mDuration = 150;
@@ -53,7 +53,7 @@ public class FragmentContainerHelper {
     }
 
     public FragmentContainerHelper(TabIndicator magicIndicator) {
-        mMagicIndicators.add(magicIndicator);
+        mTabindicators.add(magicIndicator);
     }
 
     /**
@@ -138,24 +138,24 @@ public class FragmentContainerHelper {
         }
     }
 
-    public void attachMagicIndicator(TabIndicator magicIndicator) {
-        mMagicIndicators.add(magicIndicator);
+    public void attachTabindicator(TabIndicator magicIndicator) {
+        mTabindicators.add(magicIndicator);
     }
 
     private void dispatchPageSelected(int pageIndex) {
-        for (TabIndicator magicIndicator : mMagicIndicators) {
+        for (TabIndicator magicIndicator : mTabindicators) {
             magicIndicator.onPageSelected(pageIndex);
         }
     }
 
     private void dispatchPageScrollStateChanged(int state) {
-        for (TabIndicator magicIndicator : mMagicIndicators) {
+        for (TabIndicator magicIndicator : mTabindicators) {
             magicIndicator.onPageScrollStateChanged(state);
         }
     }
 
     private void dispatchPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-        for (TabIndicator magicIndicator : mMagicIndicators) {
+        for (TabIndicator magicIndicator : mTabindicators) {
             magicIndicator.onPageScrolled(position, positionOffset, positionOffsetPixels);
         }
     }

@@ -105,7 +105,7 @@ public class CommonNavigator extends FrameLayout implements IPagerNavigator, Nav
         if (mAdapter != null) {
             mAdapter.registerDataSetObserver(mObserver);
             mNavigatorHelper.setTotalCount(mAdapter.getCount());
-            if (mTitleContainer != null) {  // adapter改变时，应该重新init，但是第一次设置adapter不用，onAttachToMagicIndicator中有init
+            if (mTitleContainer != null) {  // adapter改变时，应该重新init，但是第一次设置adapter不用，onAttachToTabindicator中有init
                 mAdapter.notifyDataSetChanged();
             }
         } else {
@@ -264,12 +264,12 @@ public class CommonNavigator extends FrameLayout implements IPagerNavigator, Nav
     }
 
     @Override
-    public void onAttachToMagicIndicator() {
+    public void onAttachToTabindicator() {
         init(); // 将初始化延迟到这里
     }
 
     @Override
-    public void onDetachFromMagicIndicator() {
+    public void onDetachFromTabindicator() {
     }
 
     public IPagerIndicator getPagerIndicator() {

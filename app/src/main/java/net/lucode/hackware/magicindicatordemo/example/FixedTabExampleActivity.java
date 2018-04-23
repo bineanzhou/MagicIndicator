@@ -45,13 +45,13 @@ public class FixedTabExampleActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
 
-        initMagicIndicator1();
-        initMagicIndicator2();
-        initMagicIndicator3();
-        initMagicIndicator4();
+        initTabindicator1();
+        initTabindicator2();
+        initTabindicator3();
+        initTabindicator4();
     }
 
-    private void initMagicIndicator1() {
+    private void initTabindicator1() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
@@ -90,7 +90,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator2() {
+    private void initTabindicator2() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator2);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -143,7 +143,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator3() {
+    private void initTabindicator3() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator3);
         magicIndicator.setBackgroundResource(R.drawable.round_indicator_bg);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -185,7 +185,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator4() {
+    private void initTabindicator4() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator4);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {

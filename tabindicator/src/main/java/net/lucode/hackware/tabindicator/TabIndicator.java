@@ -50,14 +50,14 @@ public class TabIndicator extends FrameLayout {
             return;
         }
         if (mNavigator != null) {
-            mNavigator.onDetachFromMagicIndicator();
+            mNavigator.onDetachFromTabindicator();
         }
         mNavigator = navigator;
         removeAllViews();
         if (mNavigator instanceof View) {
             LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
             addView((View) mNavigator, lp);
-            mNavigator.onAttachToMagicIndicator();
+            mNavigator.onAttachToTabindicator();
         }
     }
 }

@@ -45,18 +45,18 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
 
-        initMagicIndicator1();
-        initMagicIndicator2();
-        initMagicIndicator3();
-        initMagicIndicator4();
-        initMagicIndicator5();
-        initMagicIndicator6();
-        initMagicIndicator7();
-        initMagicIndicator8();
-        initMagicIndicator9();
+        initTabindicator1();
+        initTabindicator2();
+        initTabindicator3();
+        initTabindicator4();
+        initTabindicator5();
+        initTabindicator6();
+        initTabindicator7();
+        initTabindicator8();
+        initTabindicator9();
     }
 
-    private void initMagicIndicator1() {
+    private void initTabindicator1() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         magicIndicator.setBackgroundColor(Color.parseColor("#d43d3d"));
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -95,7 +95,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator2() {
+    private void initTabindicator2() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator2);
         magicIndicator.setBackgroundColor(Color.parseColor("#00c853"));
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -135,7 +135,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator3() {
+    private void initTabindicator3() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator3);
         magicIndicator.setBackgroundColor(Color.BLACK);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -173,7 +173,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator4() {
+    private void initTabindicator4() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator4);
         magicIndicator.setBackgroundColor(Color.parseColor("#455a64"));
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -209,7 +209,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator5() {
+    private void initTabindicator5() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator5);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -251,7 +251,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator6() {
+    private void initTabindicator6() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator6);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -288,7 +288,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator7() {
+    private void initTabindicator7() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator7);
         magicIndicator.setBackgroundColor(Color.parseColor("#fafafa"));
         CommonNavigator commonNavigator7 = new CommonNavigator(this);
@@ -331,7 +331,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator8() {
+    private void initTabindicator8() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator8);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
@@ -368,7 +368,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator9() {
+    private void initTabindicator9() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator9);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);

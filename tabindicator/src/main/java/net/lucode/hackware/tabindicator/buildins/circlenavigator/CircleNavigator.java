@@ -206,7 +206,7 @@ public class CircleNavigator extends View implements IPagerNavigator {
     }
 
     @Override
-    public void onAttachToMagicIndicator() {
+    public void onAttachToTabindicator() {
     }
 
     @Override
@@ -216,7 +216,7 @@ public class CircleNavigator extends View implements IPagerNavigator {
     }
 
     @Override
-    public void onDetachFromMagicIndicator() {
+    public void onDetachFromTabindicator() {
     }
 
     public int getRadius() {

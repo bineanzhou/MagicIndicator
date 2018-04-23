@@ -29,12 +29,12 @@ public class CustomNavigatorExampleActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
 
-        initMagicIndicator1();
-        initMagicIndicator2();
-        initMagicIndicator3();
+        initTabindicator1();
+        initTabindicator2();
+        initTabindicator3();
     }
 
-    private void initMagicIndicator1() {
+    private void initTabindicator1() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator1);
         CircleNavigator circleNavigator = new CircleNavigator(this);
         circleNavigator.setCircleCount(CHANNELS.length);
@@ -49,7 +49,7 @@ public class CustomNavigatorExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator2() {
+    private void initTabindicator2() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator2);
         CircleNavigator circleNavigator = new CircleNavigator(this);
         circleNavigator.setFollowTouch(false);
@@ -65,7 +65,7 @@ public class CustomNavigatorExampleActivity extends AppCompatActivity {
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
-    private void initMagicIndicator3() {
+    private void initTabindicator3() {
         TabIndicator magicIndicator = (TabIndicator) findViewById(R.id.magic_indicator3);
         ScaleCircleNavigator scaleCircleNavigator = new ScaleCircleNavigator(this);
         scaleCircleNavigator.setCircleCount(CHANNELS.length);
